@@ -10,7 +10,6 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(255, 255, 255);
     background-image: url(../assets/Kitchen2.png);
     flex-flow: column nowrap;
     gap: 10px;
