@@ -10,7 +10,8 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    background-image: url(../assets/Kitchen2.png);
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -29,10 +30,10 @@ body {
     height: fit-content;
     max-width: 975px;
     overflow: auto;
-    padding: 50px;
+    padding: 20px;
     position: relative;
     width: auto;
-    gap: 64px;
+    gap: 24px;
 }
 
 .header {    
@@ -40,7 +41,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: #FFF
+    color: rgba(5, 5, 5, 1);
 }
 
 .header-title {
@@ -50,20 +51,34 @@ body {
 
 .header-title h1 {
     width: 100%;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 72px;
-    letter-spacing: -4px;
+    letter-spacing: -3px;
     line-height: 1.2em;
-    text-align: center;
+    text-align: left;
     margin: 0;
+    font: 'Helvetica Neue';
 }
 
+.header-title img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    max-width: 20%;
+    height: auto;
+}
+
+
+
 .header-subtitle h2 {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 700;
     font-style: normal;
     font-weight: 400;
     line-height: 1.4em;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(5, 5, 5, 1);
 }
 
 .prompt-container {
@@ -80,7 +95,7 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(5, 5, 5, 1);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
@@ -93,12 +108,12 @@ body {
     flex: 0 0 auto;
     flex-flow: column nowrap;
     gap: 10px;
-    height: 150px;
+    height: 70px;
     overflow: hidden;
     padding: 20px;
     position: relative;
     width: 610px;
-    max-width: 1200px;
+    max-width: 80%;
     will-change: transform;
     overflow: auto;
     outline: none;
@@ -108,18 +123,23 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: start;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(5, 5, 5, 1);
     text-decoration: none;
     text-transform: none;
 }
 
 textarea {
     font-family: 'Manrope', sans-serif;
+    white-space: pre-wrap;
 }
+
+textarea::placeholder {
+    white-space: pre-wrap;
+  }
 
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color:rgba(5, 5, 5, 1)
 }
 
 
@@ -172,7 +192,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: #635bff;
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -304,7 +324,7 @@ textarea {
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #ffffff;
+    color: rgba(5, 5, 5, 1);
     text-decoration: none;
     text-transform: none;
     margin: 0;
@@ -323,7 +343,7 @@ textarea {
 .output-content p {
     text-align: center;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(5, 5, 5, 1);
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
